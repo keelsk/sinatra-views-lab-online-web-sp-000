@@ -6,7 +6,8 @@
   
   <body>
     <h1>Today</h1>
-    <%= DateTime.new %>
+    <% d = DateTime.new %>
+    <%= d.strftime('%I:%M:%S %p') %>
     <p>The date is </p>
   </body>
 </html>
